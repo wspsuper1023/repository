@@ -25,7 +25,7 @@ public class CustControllerTest {
     }
 
     @Test
-    public void testOracleProcedure() {    //ÇĞÊı¾İÔ´
+    public void testOracleProcedure() {    //åˆ‡æ•°æ®æº
         String sql = "{call queryempinfo(?,?,?,?)}";
         Connection connection = null;
         CallableStatement call = null;
@@ -34,18 +34,18 @@ public class CustControllerTest {
             connection = DaoUtil.getConnection();
             call = connection.prepareCall(sql);
 
-            //¶ÔÓÚin²ÎÊı£¬¸³Öµ
+            //å¯¹äºinå‚æ•°ï¼Œèµ‹å€¼
             call.setInt(1, 7839);
 
-            //¶ÔÓÚout²ÎÊı£¬ÉêÃ÷
+            //å¯¹äºoutå‚æ•°ï¼Œç”³æ˜
             call.registerOutParameter(2, OracleTypes.VARCHAR);
             call.registerOutParameter(3, OracleTypes.NUMBER);
             call.registerOutParameter(4, OracleTypes.VARCHAR);
 
-            //Ö´ĞĞµ÷ÓÃ
+            //æ‰§è¡Œè°ƒç”¨
             call.execute();
 
-            //È¡³ö½á¹û
+            //å–å‡ºç»“æœ
             String name = call.getString(2);
             double sal = call.getDouble(3);
             String job = call.getString(4);
@@ -56,13 +56,13 @@ public class CustControllerTest {
             DaoUtil.release(connection, call, null, null);
         }
     }
-    
+
     public static void main(String[] args) {
-    	SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
-		System.out.println(format.format(new Date()));
+        SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
+        System.out.println(format.format(new Date()));
         for (int i = 0; i < 100; i++) {
             System.out.println(i);
         }
-	}
+    }
 
 }
