@@ -1,4 +1,4 @@
-package com.paic.thread;
+package com.paic.thread.basic;
 
 class CreateThreadDemo01 extends Thread {
 	

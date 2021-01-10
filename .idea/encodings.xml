@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/test/com/paic/junit/CustControllerTest.java" charset="GB2312" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/basic/MyThread.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/basic/ThreadDemo01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/basic/ThreadDemo02.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/basic/ThreadDemo08.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/ThreadTrain2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/ThreadTrain3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/ThreadVolatile.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/VolatileNoAtomic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/sms/BatchSms.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/test/Test06.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test/com/paic/junit/test/CustControllerTest.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

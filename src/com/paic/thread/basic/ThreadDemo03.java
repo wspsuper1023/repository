@@ -1,11 +1,11 @@
-package com.paic.thread;
+package com.paic.thread.basic;
 
 abstract class Parent {
 	public abstract void add();
 }
 
 /**
- * 使用匿名内部类创建线程
+ * 使锟斤拷锟斤拷锟斤拷锟节诧拷锟洁创锟斤拷锟竭筹拷
  * */
 public class ThreadDemo03 {
 	
@@ -14,7 +14,7 @@ public class ThreadDemo03 {
 //			
 //			@Override
 //			public void add() {
-//				System.out.println("匿名内部类");
+//				System.out.println("锟斤拷锟斤拷锟节诧拷锟斤拷");
 //			}
 //		};
 //		parent.add();
@@ -24,14 +24,14 @@ public class ThreadDemo03 {
 			@Override
 			public void run() {
 				for (int i = 0; i < 20; i++) {
-					System.out.println("子线程:" + i);
+					System.out.println("锟斤拷锟竭筹拷:" + i);
 				}
 			}
 		});
 		thread.start();
 		
 		for (int i = 0; i < 20; i++) {
-			System.out.println("主线程:" + i);
+			System.out.println("锟斤拷锟竭筹拷:" + i);
 		}
 	}
 	

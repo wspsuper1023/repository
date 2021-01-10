@@ -1,4 +1,4 @@
-package com.paic.thread;
+package com.paic.thread.test;
 
 /**
  * T1 T2 T3三个线程依次执行

@@ -1,4 +1,4 @@
-package com.paic.junit;
+package com.paic.junit.test;
 
 import com.paic.constant.Constant;
 import com.paic.controller.CustController;
@@ -9,8 +9,6 @@ import org.junit.Test;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class CustControllerTest {
 
@@ -58,8 +56,6 @@ public class CustControllerTest {
     }
 
     public static void main(String[] args) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
-        System.out.println(format.format(new Date()));
         for (int i = 0; i < 100; i++) {
             System.out.println(i);
         }

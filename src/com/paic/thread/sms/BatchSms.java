@@ -1,9 +1,10 @@
-package com.paic.thread;
+package com.paic.thread.sms;
+
+import com.paic.entity.UserEntity;
+import com.paic.util.ListUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.paic.entity.UserEntity;
-import com.paic.util.ListUtils;
 
 class UserThread implements Runnable {
 	

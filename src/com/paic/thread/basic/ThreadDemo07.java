@@ -1,8 +1,8 @@
-package com.paic.thread;
+package com.paic.thread.basic;
 
 class ThreadTrain1 implements Runnable {
 	
-	//×Ü¹²100ÕÅ»ð³µÆ±
+	//ï¿½Ü¹ï¿½100ï¿½Å»ï¿½Æ±
 	int count = 100;
 //	private Object obj = new Object();
 	
@@ -21,22 +21,22 @@ class ThreadTrain1 implements Runnable {
 	public void sale() {
 		synchronized (this) {
 			if (count > 0) {
-				System.out.println(Thread.currentThread().getName()+"£¬³öÊÛµÚ"+(100-count+1)+"ÕÅÆ±.");
+				System.out.println(Thread.currentThread().getName()+"ï¿½ï¿½ï¿½ï¿½ï¿½Ûµï¿½"+(100-count+1)+"ï¿½ï¿½Æ±.");
 				count --;
 			}
 		}
 	}
 }
 
-//ÇÀ»ð³µÆ±ÎÊÌâ
+//ï¿½ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½
 public class ThreadDemo07 {
 
 	public static void main(String[] args) {
 		ThreadTrain1 threadTrain = new ThreadTrain1();
 		
-		Thread thread1 = new Thread(threadTrain, "´°¿Ú1");
-		Thread thread2 = new Thread(threadTrain, "´°¿Ú2");
-		Thread thread3 = new Thread(threadTrain, "´°¿Ú3");
+		Thread thread1 = new Thread(threadTrain, "ï¿½ï¿½ï¿½ï¿½1");
+		Thread thread2 = new Thread(threadTrain, "ï¿½ï¿½ï¿½ï¿½2");
+		Thread thread3 = new Thread(threadTrain, "ï¿½ï¿½ï¿½ï¿½3");
 		
 		thread1.start();
 		thread2.start();

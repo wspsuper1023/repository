@@ -1,4 +1,4 @@
-package com.paic.thread;
+package com.paic.thread.basic;
 
 class CreateThread04 implements Runnable {
 	@Override
@@ -9,23 +9,23 @@ class CreateThread04 implements Runnable {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-//			System.out.println("×ÓÏß³Ìid:" + getId() + "×ÓÏß³Ì:" + i);
-			System.out.println("µ±Ç°Ïß³Ìid:" + Thread.currentThread().getId() + ",µ±Ç°Ïß³Ìname:"
+//			System.out.println("ï¿½ï¿½ï¿½ß³ï¿½id:" + getId() + "ï¿½ï¿½ï¿½ß³ï¿½:" + i);
+			System.out.println("ï¿½ï¿½Ç°ï¿½ß³ï¿½id:" + Thread.currentThread().getId() + ",ï¿½ï¿½Ç°ï¿½ß³ï¿½name:"
 					+ Thread.currentThread().getName() + ",i:" + i);
 			if (i == 5) {
-				Thread.currentThread().stop(); // Ïß³Ì²»°²È«
+				Thread.currentThread().stop(); // ï¿½ß³Ì²ï¿½ï¿½ï¿½È«
 			}
 		}
 	}
 }
 
 /**
- * ³£ÓÃµÄÏß³ÌAPI
+ * ï¿½ï¿½ï¿½Ãµï¿½ï¿½ß³ï¿½API
  */
 public class ThreadDemo04 {
 
 	public static void main(String[] args) {
-		System.out.println("Ö÷Ïß³Ìname:" + Thread.currentThread().getName());
+		System.out.println("ï¿½ï¿½ï¿½ß³ï¿½name:" + Thread.currentThread().getName());
 		for (int i = 0; i < 3; i++) {
 			new Thread(new CreateThread04()).start();
 		}
