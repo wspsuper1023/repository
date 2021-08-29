@@ -100,25 +100,37 @@ public class BloodTypeUtil {
             }
         }
 
-        BloodTypeDto dtoA = new BloodTypeDto();
-        dtoA.setBloodType(A);
-        dtoA.setProportion(countA);
-        resultList.add(dtoA);
+        if (countA != 0) {
+            BloodTypeDto dtoA = new BloodTypeDto();
+            dtoA.setBloodType(A);
+            dtoA.setProportion(countA);
+            resultList.add(dtoA);
+        }
 
-        BloodTypeDto dtoB = new BloodTypeDto();
-        dtoB.setBloodType(B);
-        dtoB.setProportion(countB);
-        resultList.add(dtoB);
+        if (countB != 0) {
+            BloodTypeDto dtoB = new BloodTypeDto();
+            dtoB.setBloodType(B);
+            dtoB.setProportion(countB);
+            resultList.add(dtoB);
+        }
 
-        BloodTypeDto dtoAB = new BloodTypeDto();
-        dtoAB.setBloodType(AB);
-        dtoAB.setProportion(countAB);
-        resultList.add(dtoAB);
+        if (countAB != 0) {
+            BloodTypeDto dtoAB = new BloodTypeDto();
+            dtoAB.setBloodType(AB);
+            dtoAB.setProportion(countAB);
+            resultList.add(dtoAB);
+        }
 
-        BloodTypeDto dtoO = new BloodTypeDto();
-        dtoO.setBloodType(O);
-        dtoO.setProportion(countO);
-        resultList.add(dtoO);
+        if (countO != 0) {
+            BloodTypeDto dtoO = new BloodTypeDto();
+            dtoO.setBloodType(O);
+            dtoO.setProportion(countO);
+            resultList.add(dtoO);
+        }
+
+        if (resultList.size()==1) {
+            resultList.get(0).setProportion(1);
+        }
 
         return resultList;
     }
@@ -197,7 +209,7 @@ public class BloodTypeUtil {
     }
 
     public static void main(String[] args) throws Exception {
-        List<BloodTypeDto> bloodTypeDtoList = generateBloodType(AB, AB);
+        List<BloodTypeDto> bloodTypeDtoList = generateBloodType(B, B);
         for (BloodTypeDto dto : bloodTypeDtoList) {
             System.out.println(dto);
         }
