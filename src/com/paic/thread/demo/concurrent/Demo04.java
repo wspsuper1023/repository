@@ -40,11 +40,10 @@ class Parent extends Thread {
             System.out.println(name+"嘿嘿，终于轮到我上厕所啦...");
             Thread.sleep(new Random().nextInt(1000));   //上厕所时间
             System.out.println(name+"上完厕所啦，爽......");
-            wc.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
-
+            wc.release();
         }
     }
 }
