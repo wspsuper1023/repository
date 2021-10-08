@@ -7,8 +7,11 @@ import lombok.Data;
  * @Date: 2021/10/7 18:43
  * @Description: 线程间通讯课堂例子01
  *
+ * 什么是多线程间通讯？
+ * 多个线程操作同一个资源，但是每个线程动作不一样
+ *
  * sleep与wait区别？
- * 	相同：都是做休眠，只能在synchronized中使用，不能在lock锁使用
+ * 	相同：都是做休眠，只能在synchronized中使用，不能在lock锁使用，最终都是调用jvm级的native方法
  * 	（1）sleep属于thread，wait属于object
  * 	（2）sleep不会释放锁资源，wait会释放锁资源
  * 	（3）sleep到了休眠时间自动运行；wait需要notify或notifyAll唤醒

@@ -5,6 +5,8 @@ package com.paic.thread.demo.communication;
  * @Date: 2021/10/7 22:02
  * @Description: 线程间通讯课堂例子03：线程停止
  * 主要思路：
+ * （1）使用退出标志
+ * （2）使用interrupt中断
  *  抛出线程异常interrupt，捕获异常时调用将停止标志改为false;不能使用stop方法，因为stop方法不会回滚，线程不安全
  */
 public class StopThreadDemo {

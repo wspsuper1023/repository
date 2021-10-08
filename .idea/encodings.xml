@@ -12,6 +12,9 @@
     <file url="file://$PROJECT_DIR$/src/com/paic/thread/demo/communication/LockDemo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/paic/thread/demo/communication/StopThreadDemo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/paic/thread/demo/communication/SynchronizedDemo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/demo/concurrent/Demo02.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/demo/concurrent/Demo03.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/paic/thread/demo/concurrent/Demo04.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/ThreadTrain2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/ThreadTrain3.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/paic/thread/security/ThreadVolatile.java" charset="GBK" />
