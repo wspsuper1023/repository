@@ -11,8 +11,8 @@ import java.util.concurrent.Semaphore;
  */
 public class Demo04 {
     public static void main(String[] args) {
-        Semaphore wc = new Semaphore(3);
-        for (int i = 1; i <= 10; i++) {
+        Semaphore wc = new Semaphore(3);    //假设只有3个茅坑
+        for (int i = 1; i <= 10; i++) {     //有10个人需要上厕所
             new Parent("第"+i+"个人", wc).start();
         }
     }
